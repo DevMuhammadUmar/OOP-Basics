@@ -7,7 +7,6 @@ using namespace std;
 Object is an instance of a clss. A class is a package or container with relevant functions and attributes.
 OOP enhances the maintainability and reusability of the codebase **/
 
-
 //simple class
 class Person{
 public:
@@ -57,6 +56,23 @@ public:
 
 
 };
+
+
+//PILLARS OF OOP
+//Abstraction 
+//Encapsulation
+//Inheritence
+//Polymorphism
+
+//Abstraction
+/*Abstraction focuses on hiding complex implementation details and exposing only essential features to the user.
+It simplifies interaction with objects by providing a high-level interface while masking underlying complexity. */
+
+//Encapsulation
+/*Encapsulation is the practice of bundling data (attributes) and methods (functions) that operate on that data
+into a single unit (class), while restricting direct access to some components.This is achieved using 
+access modifiers (private, protected, public),ensuring data integrity by hiding internal details and exposing only necessary functionality.*/
+
 
 //Acces Specifiers
 class Phone{
@@ -140,6 +156,16 @@ class Department {
 };
 
 
+//Overloading vs Overriding 
+/*Overloading occurs when multiple functions in the same class share the same name but differ in parameters (number, type, or order), 
+enabling different behaviors while resolved at compile-time. Overriding, on the other hand, happens in inheritance, where a derived 
+class redefines a base class's virtual function with the same signature, allowing customized behavior while resolved at runtime. 
+Overloading enhances flexibility within a class, while overriding enables dynamic method behavior in derived classes,*/
+
+
+
+
+
 
 int main(){
 
@@ -148,6 +174,11 @@ int main(){
 	p.phoneNumber = 00003333333;
 
 	p.Speak();
+
+	Person p1("ali", 1112223333);
+
+	p1.setName("hamza");
+	p1.setPhoneNumber(2222544556);
 
 
 	return 0;
