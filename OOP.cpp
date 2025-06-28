@@ -1,4 +1,4 @@
-#include<iostream>
+﻿#include<iostream>
 #include<string>
 using namespace std;
 
@@ -41,11 +41,44 @@ public:  // public means these functions or attributes can be accesed outside th
 
 // Relations in OOP 
 
-/**Composition
+/* Inheritence
+Is-A Relationship
+A class derives from another class, inheriting its members.
+
+Types:
+Single inheritance: One base class → one derived class
+
+Multiple inheritance: A class inherits from multiple base classes
+
+Multilevel inheritance: Chain of inheritance (A → B → C)
+
+Hierarchical inheritance: Multiple classes inherit from one base class
+
+Hybrid inheritance: Combination of multiple and multilevel
+
+*/
+
+class Animal { 
+	//base class 
+};
+
+class Dog : public Animal {
+	// this class will inherit the functionality of the parent class
+};
+class Cat : public Animal{
+	//hierarchical inheritence as bot Dog and Cat inherit from Animal
+};
+
+class GermanSephered : public Dog{
+
+	// this is multi level inheritence as it inherits from Dog and Dog inherits Animal
+};
+
+/*Composition
 Has-A Relationship
 A class contains objects of other classes as members (strong ownership).
 The contained object's lifetime is tied to the container
-Strong relationship the part cannot exist without the whole **/
+Strong relationship the part cannot exist without the whole */
 
 class Engine { /* Engine class */ };
 
@@ -56,11 +89,11 @@ class Car {
 };
 
 
-/**Aggregation
+/*Aggregation
 Weaker Has - A Relationship
 A class contains references / pointers to other objects(weak ownership).
 The contained object can exist independently
-Weaker relationship than composition **/
+Weaker relationship than composition */
 
 class Professor { /* Professor class */ };
 
