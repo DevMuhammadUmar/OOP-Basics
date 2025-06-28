@@ -164,6 +164,14 @@ Overloading enhances flexibility within a class, while overriding enables dynami
 
 
 
+//Polymorphism
+/*Polymorphism means "many forms"—it allows objects of different classes to be treated as
+objects of a common superclass, enabling one interface with multiple implementations.
+
+Types:
+Compile-Time Polymorphism (Static/Overloading)
+Runtime Polymorphism (Dynamic/Overriding)*/
+
 
 
 
