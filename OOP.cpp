@@ -56,8 +56,17 @@ class Car {
 };
 
 
-//Aggregation
+/**Aggregation
+Weaker Has - A Relationship
+A class contains references / pointers to other objects(weak ownership).
+The contained object can exist independently
+Weaker relationship than composition **/
 
+class Professor { /* Professor class */ };
+
+class Department {
+	Professor* prof;  
+};
 
 
 
