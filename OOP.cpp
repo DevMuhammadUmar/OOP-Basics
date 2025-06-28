@@ -18,6 +18,44 @@ public:
 		cout << "Hello i am " << name << " how are you ? " << endl;
 	}
 
+	//Constructors
+
+	//default
+	Person(){
+		phoneNumber = 0;
+	}
+
+	//Overloaded Constructor
+	Person(string name, int phoneNumber){
+
+		this->name = name;
+		this->phoneNumber = phoneNumber;
+
+	}
+
+	//setters and getters
+	void setName(string name){
+		this->name = name;
+	}
+	void setPhoneNumber(int phoneNumber){
+		this->phoneNumber = phoneNumber;
+	}
+
+	string getName(){
+		return name;
+	}
+
+	int getPhoneNumber(){
+		return phoneNumber;
+	}
+
+	//Destructor
+
+	~Person(){
+
+	}
+
+
 };
 
 //Acces Specifiers
