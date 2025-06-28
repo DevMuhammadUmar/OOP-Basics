@@ -39,7 +39,24 @@ public:  // public means these functions or attributes can be accesed outside th
 
 };
 
-//
+// Relations in OOP 
+
+/**Composition
+Has-A Relationship
+A class contains objects of other classes as members (strong ownership).
+The contained object's lifetime is tied to the container
+Strong relationship the part cannot exist without the whole **/
+
+class Engine { /* Engine class */ };
+
+class Car {
+
+	Engine engine; 
+
+};
+
+
+//Aggregation
 
 
 
